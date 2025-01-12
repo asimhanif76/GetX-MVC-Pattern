@@ -20,7 +20,7 @@ class ProfileEditPage extends StatelessWidget {
               backgroundImage: NetworkImage('https://play-lh.googleusercontent.com/jInS55DYPnTZq8GpylyLmK2L2cDmUoahVacfN_Js_TsOkBEoizKmAl5-p8iFeLiNjtE=w526-h296-rw'),
             ),
             MyTextField(label: 'Name', keyboardType: TextInputType.text, controller: nameController),
-            MyTextField(label: 'A', keyboardType: TextInputType.number, controller: ageController),
+            MyTextField(label: 'Age', keyboardType: TextInputType.number, controller: ageController),
             MyTextField(label: 'Mobile Number', keyboardType: TextInputType.phone, controller: numberController),
             ElevatedButton(onPressed: (){}, child: Text('Refresh'))
           ],
