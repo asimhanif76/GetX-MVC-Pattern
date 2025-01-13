@@ -4,7 +4,7 @@ import 'package:flutter/widgets.dart';
 
 class MyTextField extends StatelessWidget {
   String label;
-  bool? isapssword;
+  bool isapssword;
   TextInputType keyboardType;
   TextEditingController controller;
   MyTextField(
@@ -12,7 +12,7 @@ class MyTextField extends StatelessWidget {
       required this.label,
       required this.keyboardType,
       required this.controller,
-      this.isapssword});
+      this.isapssword = false});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MyTextField extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: TextField(
         controller: controller,
-        obscureText: isapssword!,
+        obscureText: isapssword,
         decoration: InputDecoration(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
