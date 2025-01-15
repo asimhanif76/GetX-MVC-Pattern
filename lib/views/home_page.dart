@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
         child: Scaffold(
       appBar: AppBar(
         title: Text('Login Page'),
-        backgroundColor: Colors.purple.shade300,
+        backgroundColor: Colors.purple.shade200,
       ),
       body: SingleChildScrollView(
         child: Column(
