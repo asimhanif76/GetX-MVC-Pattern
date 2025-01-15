@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:login_profile_with_mvc_getx/views/home_page.dart';
+import 'package:login_profile_with_mvc_getx/routes/routes.dart';
+import 'package:login_profile_with_mvc_getx/routes/routes_name.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      initialRoute: RouteName.homePage,
+      onGenerateRoute: Routes.generateRoute,
     );
   }
 }

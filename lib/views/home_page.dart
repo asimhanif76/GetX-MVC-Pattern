@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:login_profile_with_mvc_getx/controllers/user_login_controller.dart';
+import 'package:login_profile_with_mvc_getx/routes/routes_name.dart';
 import 'package:login_profile_with_mvc_getx/views/profile_edit_page.dart';
 import 'package:login_profile_with_mvc_getx/widgets/my_text_field.dart';
 
@@ -51,11 +52,7 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 50),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ProfileEditPage(),
-                      ));
+                  Navigator.pushNamed(context, RouteName.profileEditPage);
                 },
                 child: Text('Profile Page'))
           ],
