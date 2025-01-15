@@ -36,7 +36,7 @@ class ProfileEditPage extends StatelessWidget {
                 onPressed: () {
                   controller.pickImage();
                 },
-                child: Text('Pick From Gallery')),
+                child: const Text('Pick From Gallery')),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -44,7 +44,7 @@ class ProfileEditPage extends StatelessWidget {
                 onPressed: () {
                   controller.pickCameraImage  ();
                 },
-                child: Text('Pick From Camera')),
+                child: const Text('Pick From Camera')),
           ),
           MyTextField(
               label: 'Name',
@@ -68,18 +68,18 @@ class ProfileEditPage extends StatelessWidget {
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton(
                         value: controller.userprofile.value.gender,
-                        items: [
+                        items: const [
                           DropdownMenuItem(
-                            child: Text('Male'),
                             value: 'Male',
+                            child: Text('Male'),
                           ),
                           DropdownMenuItem(
-                            child: Text('Female'),
                             value: 'Female',
+                            child: Text('Female'),
                           ),
                           DropdownMenuItem(
-                            child: Text('Other'),
                             value: 'Other',
+                            child: Text('Other'),
                           ),
                         ],
                         onChanged: (value) {
@@ -106,7 +106,7 @@ class ProfileEditPage extends StatelessWidget {
                 });
                 Get.to(() => ViewProfile());
               },
-              child: Text('View Profile'))
+              child: const Text('View Profile'))
         ],
       ),
     ));
